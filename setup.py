@@ -33,7 +33,7 @@ setup(
     description='A reproducible machine learning pipeline for Twitter sentiment classification and toxicity detection.',
     long_description=read_readme('README.md'),
     long_description_content_type='text/markdown',
-    url='https://github.com/pankti7772/Sentiment_Analysis_Using_NLP',  # <-- replace with your repo URL
+    url='hhttps://github.com/pankti7772/Twitter-Sentiment-Analysis-NLP',  # <-- replace with your repo URL
     packages=find_packages(exclude=('tests', 'docs')),
     include_package_data=True,
     install_requires=get_requirements('requirements.txt'),

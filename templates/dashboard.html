@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">Sentiment Analytics</a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/dashboard">Sentiment Analyzer</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dashboard Page -->
+    <div class="dashboard-page">
+        <div class="container">
+            <h1>Sentiment Analysis Dashboard</h1>
+
+            <!-- Analyze Section -->
+            <div class="analyze-section">
+                <h2 style="margin-bottom: 24px; font-size: 28px;">Analyze Sentiment</h2>
+                <textarea id="textInput" placeholder="Enter text to analyze sentiment..."></textarea>
+                <button class="btn" onclick="analyzeSentiment()">Analyze Sentiment</button>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loading" class="loading hidden">
+                <p>Analyzing sentiment...</p>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results" class="results hidden">
+                <!-- Predicted Sentiment -->
+                <div class="result-card">
+                    <h2>Predicted Sentiment</h2>
+                    <div id="sentimentBadge"></div>
+                </div>
+
+                <!-- Toxicity Status -->
+                <div class="result-card">
+                    <h2>Toxicity Status</h2>
+                    <div id="toxicityBadge"></div>
+                </div>
+
+                <!-- Sentiment Overview -->
+                <div class="result-card">
+                    <h2>Sentiment Overview</h2>
+                    <div class="sentiment-overview">
+                        <table class="sentiment-table">
+                            <thead>
+                                <tr>
+                                    <th>Keyword</th>
+                                    <th>Sentiment Label</th>
+                                    <th>Breakdown</th>
+                                </tr>
+                            </thead>
+                            <tbody id="sentimentTableBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="charts-container">
+                    <!-- Sentiment Probability Bar Chart -->
+                    <div class="chart-card">
+                        <h3>Sentiment Probability</h3>
+                        <div class="chart-container">
+                            <canvas id="sentimentBarChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Stacked Bar Chart per Keyword -->
+                    <div class="chart-card">
+                        <h3>Sentiment by Keyword</h3>
+                        <div class="chart-container">
+                            <canvas id="keywordStackedChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Pie Chart for Toxic vs Safe -->
+                    <div class="chart-card">
+                        <h3>Toxic vs Safe</h3>
+                        <div class="chart-container">
+                            <canvas id="toxicityPieChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Home Button -->
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="/" class="btn btn-secondary">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 Sentiment Analytics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
+

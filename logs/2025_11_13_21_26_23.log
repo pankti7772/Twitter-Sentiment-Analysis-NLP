@@ -1,0 +1,12 @@
+[2025-11-13 21:26:23,679] INFO in root (line 63): Started data ingestion
+[2025-11-13 21:26:23,680] ERROR in root (line 121): Error in data ingestion
+Traceback (most recent call last):
+  File "/Users/pankti/Desktop/sentiment_analysis/src/components/data_ingestion.py", line 66, in initiate_data_ingestion
+    raise FileNotFoundError(f"Input data file not found: {self.input_data_path}")
+FileNotFoundError: Input data file not found: data/raw/tweets.csv
+[2025-11-13 21:26:23,680] ERROR in src.exception (line 51): 
+⚠️ [Exception Caught]
+  File       : /Users/pankti/Desktop/sentiment_analysis/src/components/data_ingestion.py
+  Line No.   : 66
+  Error Type : FileNotFoundError
+  Message    : Input data file not found: data/raw/tweets.csv

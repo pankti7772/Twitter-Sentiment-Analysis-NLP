@@ -1,0 +1,4 @@
+[2025-11-13 22:58:10,042] INFO in src.utils (line 38): Loaded object from artifacts/tfidf_vectorizer.pkl
+[2025-11-13 22:58:10,079] INFO in src.utils (line 38): Loaded object from artifacts/sentiment_model.pkl
+[2025-11-13 22:58:10,080] INFO in src.utils (line 38): Loaded object from artifacts/sentiment_encoder.pkl
+[2025-11-13 22:58:10,080] INFO in app (line 61): Artifacts loaded successfully. Service ready.

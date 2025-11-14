@@ -1,0 +1,21 @@
+INFO:     Started server process [79945]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:58057 (Press CTRL+C to quit)
+
+⚠️  Could not create public tunnel: module 'pyngrok.ngrok' has no attribute 'set_ngrok_path'
+   Continuing with localhost only...
+
+
+============================================================
+🚀 Starting FastAPI server on port 58057
+📍 Local URL: http://localhost:58057
+💡 Tip: Install pyngrok for public URL: pip install pyngrok
+📖 API Documentation: http://localhost:58057/docs
+📚 Alternative docs: http://localhost:58057/redoc
+============================================================
+
+INFO:     127.0.0.1:58067 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58067 - "GET /static/css/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58067 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     Shutting down

@@ -1,0 +1,29 @@
+[23:45:37] INFO: Opening tunnel named: http-57827-2603ee1d-d11c-4efd-aaaf-803b51a795f9
+Downloading ngrok ...INFO:     Started server process [79730]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:57827 (Press CTRL+C to quit)
+
+⚠️  Could not create public tunnel: An error occurred while downloading ngrok from https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-darwin-arm64.zip: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>
+   💡 SSL certificate issue detected.
+   💡 Try: pip install --upgrade certifi
+   💡 Or install ngrok manually: brew install ngrok/ngrok/ngrok
+   Continuing with localhost only...
+
+
+============================================================
+🚀 Starting FastAPI server on port 57827
+📍 Local URL: http://localhost:57827
+💡 Tip: Install pyngrok for public URL: pip install pyngrok
+📖 API Documentation: http://localhost:57827/docs
+📚 Alternative docs: http://localhost:57827/redoc
+============================================================
+
+INFO:     127.0.0.1:57839 - "GET / HTTP/1.1" INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [79403]
+FO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [79730]

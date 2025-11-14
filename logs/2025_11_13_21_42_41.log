@@ -1,0 +1,4 @@
+[2025-11-13 21:42:41,980] INFO in root (line 50): Started data ingestion
+[2025-11-13 21:42:42,049] INFO in root (line 58): Loaded data from /Users/pankti/Desktop/sentiment_analysis/notebook/data/twitter_training_cleaned.csv (rows=74681, cols=4)
+[2025-11-13 21:42:42,144] INFO in root (line 65): Saved raw dataset to artifacts/data_raw.csv
+[2025-11-13 21:42:42,242] INFO in root (line 78): Train and test data saved in artifacts folder
